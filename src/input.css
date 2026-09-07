@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* @theme is where you define your own custom design values (colors, fonts, spacing, etc.) so Tailwind turns them into ready-to-use utility classes. */
+
+@theme {
+  --font-roboto: "Roboto Condensed", sans-serif;
+  --color-lead: #212121;
+  --color-gold-finger: #F2BD12;
+  --color-eye-ball: #FFFDF7;
+  --color-hint-yellow: #FCF1CC;
+  --color-pure-white: #FFF;
+  --background-image-imagebg: url('../images/image copy 10.png');
+}
+@layer components {
+  .order-card {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-lead);
+    
+  }
+
+}
+
+@layer components {
+  .cart-tab {
+    background: var(--color-hint-yellow);
+    position: fixed;
+    z-index: 10;
+    inset: 0 -500px 0 auto;
+    width: 25rem;
+    padding-block: 6rem;
+    /* padding-inline: 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    height: 100vh;
+    box-shadow: rgba(0,0,0,0.2) -10px -10px 20px ;
+    transition: 0.3s ease-in-out;
+
+  }
+  .cart-tab-active{
+    inset: 0 0 0 auto;
+  }
+  .cart-list{
+    width: 100%;
+    flex: 1;
+  }
+  .item:nth-child(even) {
+    background: var(--color-eye-ball);
+  }
+  .item{
+    transition:all .5s ease-in-out;
+  }
+  .item.slide-out{
+    transform: translate(50%);
+  }
+  
+  .total-container{
+    width: 100%;  
+    background:var(--color-gold-finger);
+    text-align: center;
+    padding-block: 1rem;
+  }
+  .btn-container {   
+    display: flex;
+    gap: 1rem;
+  }
+  .btn{
+    transition:.3s ease-in-out;
+  }
+
+}
+
+@layer components {
+  .swiper {
+    width: 500px;
+    height: 250px;
+    
+  }
+}
+
+@layer components {
+  .wrapper{
+  max-width: 1400px;
+  margin: auto;
+  /* padding-inline: 20px;  */
+  }
+}
+/* height auto yad rakhna */
+/* <div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div> */
+
+/* More animations */
+@theme {
+  --animate-float: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/*Header-animation*/
+@layer components {
+  .card-list {
+    transition: all 0.3s ease-in-out;
+  }
+  .card-list.shift-left {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-right: 25rem; /* same width as .cart-tab, so grid stops before it */
+  }
+}

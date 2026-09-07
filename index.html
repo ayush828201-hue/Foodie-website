@@ -1,0 +1,410 @@
+<!doctype html>
+<html class="absolute overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" > -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            /* margin: auto; */
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0  box-border font-roboto bg-amber-50">
+    <!-- HEADER-PART -->
+    <header class="sticky top-0 z-50 w-screen">
+        <nav class=" flex justify-between bg-amber-300 h-15 w-full items-center px-20">
+            <a href="#" class="logo font-extrabold text-[2rem]">Foodie</a>
+            <ul>
+                <li class="flex gap-12 text-[1.2rem] font-medium">
+                    <a href="" class="nav-link">Home</a>
+                    <a href="" class="nav-link">Menu</a>
+                    <a href="" class="nav-link">Service</a>
+                    <a href="" class="nav-link">About us</a>
+                    <a href="" class="nav-link">Contacts</a>
+                </li>
+            </ul>
+
+            <div class=" flex gap-6 items-center">
+                <a class="cart-icon relative justify-center items-center gap-0.1" href="#">
+                    <i class="fa-solid fa-bag-shopping text-xl "></i>
+                    <div
+                        class="cart-value absolute top-2 -right-2 text-[0.8rem] font-bold rounded-full bg-white w-4 flex items-center justify-center">
+                        0
+                    </div>
+                </a>
+
+                <button href=""
+                    class=" bg-red-500 rounded-2xl h-10 w-25 no-underline text-white text-[1.2rem] hover:bg-blue-800">
+                    Sign in
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </button>
+
+                <a class="text-[1.4rem] hidden" href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION PART -->
+    <main class="   ">
+        <section class="bg-imagebg bg-cover  bg-no-repeat  w-full bg-fixed h-172 overflow-hidden ">
+            <div class="hero-section px-20 flex justify-center items-end h-full  ">
+                <div class="flex-1 flex justify-center self-center mt-26">
+                    <div class="content text-center lg:text-left">
+                        <h1 class="text-[6.5vw] text-pure-white  font-extrabold">
+                            Enjoy Your Delicious <span class="text-amber-400">Food</span>
+                        </h1>
+                        <p class="text-pure-white  text-[1.3rem] font-semibold ">Loved by thousands of happy
+                            customers
+                            across the city</p>
+                        <div class="flex flex-col items-center lg:flex-row lg:items-center gap-6 my-6 mx-1">
+
+                            <div class="social-icon flex items-center justify-center gap-8 text-center">
+                                <a href=""
+                                    class="text-[1.5rem] rounded-2xl bg-hint-yellow hover:text-pure-white hover:bg-black size-10 flex items-center justify-center shadow-md"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href=""
+                                    class="text-[1.5rem] rounded-2xl bg-hint-yellow hover:text-pure-white hover:bg-black size-10 flex items-center justify-center shadow-md"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                                <a href=""
+                                    class="text-[1.5rem] rounded-2xl bg-hint-yellow hover:text-pure-white hover:bg-black size-10 flex items-center justify-center shadow-md"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href=""
+                                    class="text-[1.5rem] rounded-2xl bg-hint-yellow hover:text-pure-white hover:bg-black size-10 flex items-center justify-center shadow-md"><i
+                                        class="fa-brands fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="ml-10 w-3xl aspect-square object-fill pt-30 rounded-t-full "
+                        src="images/image copy 4.png" alt="vhv">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class=" wrapper mt-40">
+                <div class="text-center">
+                    <h5 class="text-gold-finger text-[1.3rem] font-semibold uppercase ">Our Services</h5>
+                    <h2 class="text-lead capitalize text-[3.7rem] font-extrabold">How does it work?</h2>
+                </div>
+                <div class="flex justify-evenly pt-5 ">
+                    <div class="service-card text-center mt-5 ">
+                        <div class="images size-35 ml-3 ">
+                            <img class="ml-8" src="images/image copy 6.png" alt="">
+                        </div>
+                        <h3 class="text-[1.2rem] text-lead capitalize font-extrabold mt-2">Order in Minutes</h3>
+                        <p>Place your order in just a few clicks</p>
+                    </div>
+
+                    <div class="service-card text-center mt-1 gap-1.5">
+                        <div class="images size-40 ml-6">
+                            <img src="images/image copy 7.png" alt="">
+                        </div>
+                        <h3 class="text-[1.2rem] text-lead capitalize font-extrabold mt-1">Race to Your Door</h3>
+                        <p>Delivery that is always ontime faster</p>
+                    </div>
+
+                    <div class="service-card text-center">
+                        <div class="images size-40 ml-13">
+                            <img src="images/image copy 8.png" alt="">
+                        </div>
+                        <h3 class="text-[1.2rem] text-lead capitalize font-extrabold mt-2">Premium Quality</h3>
+                        <p>Great taste you can trust, every single time.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="">
+            <div class="wrapper mt-40" >
+                <div class="text-center">
+                    <h5 class="text-[1.2rem] text-gold-finger uppercase font-extrabold mt-2">Lovely Menu</h5>
+                    <h2 class="text-lead capitalize text-[3.7rem] font-extrabold">Most Popular Dish</h2>
+                </div>
+
+                <div class="card-list grid grid-cols-4 mt-5 ">
+                    <!-- <div
+                    class="order-card border-3 border-solid border-yellow-400 rounded-2xl flex flex-col items-center text-center ">
+                    <div class="card-image flex justify-center items-center ">
+                        <img class="size-50 " src="images/image.png" alt="">
+                    </div>
+                    <h4 class="price text-2xl">Veg Burger</h4>
+                    <h4 class="text-gold-finger">₹70</h4>
+                    <button class="bg-amber-400 text-white font-extrabold text-[1.1rem] rounded-3xl h-10 w-30 mt-4">Add
+                    to Cart</button>
+                    </div> -->
+                </div>
+
+                <!-- CART-TAB -->
+                <div class="cart-tab ">
+                    <h4 class="font-extrabold text-3xl">Your Cart</h4>
+
+                    <div class="cart-list overflow-auto scrollbar-none ">
+                        <!-- <div class="item flex items-center justify-evenly  ">
+                            <div class="item-image">
+                                <img class="w-20" src="images/Veg Burger.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-[1.2rem] font-medium">Veg Burger</h4>
+                                <h4 class=" text-[1.2rem]  item-total">₹70</h4>
+                            </div>
+                            <div class="flex">
+                                <a href="#"
+                                    class="quantity-btn bg-lead text-pure-white w-[1.7rem] aspect-square rounded-full text-center leading-[1.7rem] "><i
+                                        class="fa-solid fa-minus"></i></a>
+
+                                <h4 class="quantity-value text-[1.2rem] font-normal mx-[0.6rem]">1</h4>
+
+                                <a href="#"
+                                    class="quantity-btn bg-lead text-pure-white w-[1.7rem] aspect-square rounded-full text-center leading-[1.7rem]"><i
+                                        class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="total-container ">
+                        <h4 class=" text-2xl inline-block">Total</h4>
+                        <h4 class="cart-total  text-2xl inline-block">₹0.00</h4>
+                    </div>
+
+                    <div class="btn-container flex gap-4">
+                        <a href="#" class="btn close-btn "><button
+                                class=" text-white bg-lead font-extrabold text-[1rem] rounded-2xl h-12 w-25 hover:bg-gold-finger hover:text-lead">Close</button></a>
+                        <a href="#" class="btn close-btn"><button
+                                class=" text-white bg-lead font-extrabold text-[1rem] rounded-2xl h-12 w-25 hover:bg-gold-finger hover:text-lead">Check
+                                Out</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-30 mt-32 mb-32 flex justify-center">
+            <div class="wapper  flex gap-20 items-center">
+                <div class="ml-25">
+                    <img class="image-bottom-container aspect-square h-96 object-cover  bg-gold-finger rounded-full  animate-float"
+                        src="images/image copy 5.png" alt="">
+                </div>
+
+                <div class="review-container">
+                    <h5 class="text-[1.4rem] text-gold-finger uppercase font-extrabold ">Our Reviews</h5>
+                    <h2 class=" -mt-4 text-lead capitalize text-[3.5rem] font-extrabold">What they Say?</h2>
+
+
+                    <div class="swiper mySwiper mt-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="profile flex items-center gap-4">
+                                    <div class="profile">
+                                        <img class="h-24 w-24 aspect-square mt-3 object-cover rounded-full"
+                                            src="images/image copy 11.png" alt="User">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[1.5rem] font-extrabold">Tarun Singh</h4>
+                                        <div class="text-yellow-400 text-xl">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[1.2rem] mt-4 text-lead">
+                                    "I've become a regular at Foodie because they just get it right every single
+                                    time.
+                                    Delicious food, speedy service, and absolutely no complaints."
+                                </p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="profile flex items-center gap-4">
+                                    <img class="h-24 w-24 aspect-square mt-3 object-cover rounded-full"
+                                        src="images/image copy 13.png" alt="User">
+                                    <div>
+                                        <h4 class="text-[1.5rem] font-extrabold">Priya Sharma</h4>
+                                        <div class="text-yellow-400 text-xl">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[1.2rem] mt-4 text-lead">
+                                    "Foodie never disappoints — every meal feels fresh, flavorful, and made with
+                                    care.
+                                    Fast delivery, huge portions, and always worth every penny."
+                                </p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="profile flex items-center gap-4">
+                                    <img class="h-24 w-24 aspect-square mt-3 object-cover rounded-full"
+                                        src="images/image copy 12.png" alt="User">
+                                    <div>
+                                        <h4 class="text-[1.5rem] font-extrabold">Rahul Verma</h4>
+                                        <div class="text-yellow-400 text-xl">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[1.2rem] mt-4 text-lead">
+                                    "Ordered from Foodie for the first time and I'm already obsessed.
+                                    Quick delivery, amazing taste, and my whole family loved it."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between ">
+                        <a href="#" id="next"
+                            class="arrow flex justify-center items-center bg-amber-300 size-10 rounded-4xl">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                        <a href="#" id="prev"
+                            class="arrow flex justify-center items-center bg-amber-300 size-10 rounded-4xl">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bg-gray-800 max-w-full  px-10 flex justify-center h-80 ">
+            <div class="wrapper flex  items-center gap-10 ">
+
+                <div class=" flex align-bottom  ">
+                    <img src="images/image copy 4.png" alt="Special dish" class=" size-120  object-cover ">
+                </div>
+
+                <div class="flex-1 text-center lg:text-left">
+                    <h5 class="text-gold-finger uppercase font-extrabold  text-[1.1rem]">
+                        Never Miss a Deal
+                    </h5>
+                    <h2 class="text-pure-white font-extrabold text-[2.8rem]  mt-2">
+                        Get 20% Off Your <span class="text-gold-finger">First Order</span>
+                    </h2>
+                    <p class="text-eye-ball text-[1.1rem] mt-4 opacity-80">
+                        Join our foodie family — fresh deals, secret menu drops, and
+                        exclusive discounts straight to your inbox.
+                    </p>
+
+                    <form class="mt-8 flex flex-col sm:flex-row gap-5 max-w-md mx-auto lg:mx-0">
+                        <input type="email" placeholder="Enter your email address"
+                            class="flex-1 rounded-2xl px-6 py-4 text-lead outline-none bg-white placeholder:text-gray-500">
+                        <button type="submit"
+                            class="bg-gold-finger hover:bg-amber-500 transition text-lead font-extrabold rounded-full px-8 py-4 whitespace-nowrap">
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PART -->
+    <footer class="bg-gray-900 h-90">
+        <div class="footer-container px-20 pt-15 flex justify-around">
+
+            <div>
+                <a href="#" class="logo text-gold-finger font-extrabold text-[2rem] ">Foodie</a>
+                <p class="text-eye-ball opacity-70 mt-2 max-w-xs">
+                    Cravings don't wait. Neither do we — hot, fresh meals delivered to your door in minutes
+                </p>
+                <div class="social-icon-footer flex gap-8 mt-10">
+                    <a href=""
+                        class="text-[1.5rem] rounded-2xl bg-hint-yellow hover:text-pure-white hover:bg-black size-10 flex items-center justify-center shadow-md"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href=""
+                        class="text-[1.5rem] rounded-2xl bg-hint-yellow hover:text-pure-white hover:bg-black size-10 flex items-center justify-center shadow-md"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""
+                        class="text-[1.5rem] rounded-2xl bg-hint-yellow hover:text-pure-white hover:bg-black size-10 flex items-center justify-center shadow-md"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href=""
+                        class="text-[1.5rem] rounded-2xl bg-hint-yellow hover:text-pure-white hover:bg-black size-10 flex items-center justify-center shadow-md"><i
+                            class="fa-brands fa-google"></i></a>
+                </div>
+            </div>
+            <div class="flex gap-50">
+
+                <div>
+                    <h4 class="text-pure-white font-extrabold text-2xl mb-4">Our Menu</h4>
+                    <ul class="space-y-3 text-eye-ball opacity-70">
+                        <li><a href="#" class="hover:text-gold-finger transition">Special</a></li>
+                        <li><a href="#" class="hover:text-gold-finger transition">Popular</a></li>
+                        <li><a href="#" class="hover:text-gold-finger transition">Categories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-pure-white font-extrabold text-2xl mb-4">Company</h4>
+                    <ul class="space-y-3 text-eye-ball opacity-70">
+                        <li><a href="#" class="hover:text-gold-finger transition">Why Foodie</a></li>
+                        <li><a href="#" class="hover:text-gold-finger transition">Partner with us</a></li>
+                        <li><a href="#" class="hover:text-gold-finger transition">About us</a></li>
+                        <li><a href="#" class="hover:text-gold-finger transition">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-pure-white font-extrabold text-2xl mb-4">Support</h4>
+                    <ul class="space-y-3 text-eye-ball opacity-70">
+                        <li><a href="#" class="hover:text-gold-finger transition">Account</a></li>
+                        <li><a href="#" class="hover:text-gold-finger transition">Support center</a></li>
+                        <li><a href="#" class="hover:text-gold-finger transition">Feedback</a></li>
+                        <li><a href="#" class="hover:text-gold-finger transition">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="flex mt-4 px-20 justify-around items-center border-t border-white/10  text-eye-ball opacity-50 text-sm">
+            <div class="mt-10 flex justify-center gap-4">
+                <p>&copy; 2026 Foodie. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-gold-finger transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-gold-finger transition">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js" defer></script>
+
+</body>
+
+</html>

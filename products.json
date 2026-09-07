@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Veg Burger",
+        "price": "₹70",
+        "image": "images/Veg Burger.png"
+    },
+    {
+        "id": 2,
+        "name": "Margherita Pizza",
+        "price": "₹180",
+        "image": "images/Margherita Pizza.png"
+    },
+    {
+        "id": 3,
+        "name": "Chicken Biryani",
+        "price": "₹220",
+        "image": "images/Chicken Biryani.png"
+    },
+    {
+        "id": 4,
+        "name": "Paneer Tikka",
+        "price": "₹150",
+        "image": "images/Paneer Tikka.png"
+    },
+    {
+        "id": 5,
+        "name": "French Fries",
+        "price": "₹90",
+        "image": "images/French Fries.png"
+    },
+    {
+        "id": 6,
+        "name": "Cheese Sandwich",
+        "price": "₹110.79",
+        "image": "images/Cheese Sandwich.png"
+    },
+    {
+        "id": 7,
+        "name": "Pasta Alfredo",
+        "price": "₹199.99",
+        "image": "images/Pasta Alfredo.png"
+    },
+    {
+        "id": 8,
+        "name": "Spring Roll",
+        "price": "₹70.55",
+        "image": "images/Spring Roll.png"
+    }
+]
